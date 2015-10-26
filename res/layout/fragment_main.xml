@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ayman.homoauto.MainActivity$PlaceholderFragment" >
+
+    <ToggleButton
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/led"
+        android:layout_below="@+id/led"
+        android:text="ToggleButton"
+        android:textOff="Fan Off"
+        android:textOn="Fan On" />
+
+    <ToggleButton
+        android:id="@+id/led"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manual"
+        android:layout_centerHorizontal="true"
+        android:text="ToggleButton"
+        android:textOff="Lights Off"
+        android:textOn="Lights On" 
+        
+        />
+
+    <ToggleButton
+        android:id="@+id/manual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/led"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="ToggleButton"
+        android:textOff="Manual Control Off"
+        android:textOn="Manual Control On" />
+
+    <ToggleButton
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/t1"
+        android:layout_alignRight="@+id/t1"
+        android:layout_below="@+id/t1"
+        android:text="ToggleButton"
+        android:textOff="Alarm Off"
+        android:textOn="Alarm On" />
+
+    <ToggleButton
+        android:id="@+id/blinds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alarm"
+        android:layout_alignRight="@+id/alarm"
+        android:layout_below="@+id/alarm"
+        android:text="ToggleButton"
+        android:textOff="Blinds closed"
+        android:textOn="Blinds open" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blinds"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/blinds"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cu" />
+
+    <Button
+        android:id="@+id/voice"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignRight="@+id/blinds"
+        android:text="Voice" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1" />
+
+</RelativeLayout>
